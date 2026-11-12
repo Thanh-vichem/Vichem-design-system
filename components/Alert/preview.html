@@ -1,0 +1,23 @@
+<!-- @dsCard group="Thông báo và hộp thoại" height=330 width=720 subtitle="4 tone — thông tin, thành công, cảnh báo, nguy hiểm" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Alert</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .stack{display:grid;gap:14px;max-width:640px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Alert } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "stack" }, /* @__PURE__ */ React.createElement(Alert, { tone: "info", title: "Đơn hàng đang được xử lý" }, "Hệ thống đang xử lý, bạn không cần làm gì thêm. (Ví dụ)"), /* @__PURE__ */ React.createElement(Alert, { tone: "success", title: "Đã lưu tài liệu" }, "Thay đổi của bạn đã được cập nhật trong hệ thống. (Ví dụ)"), /* @__PURE__ */ React.createElement(Alert, { tone: "warning", title: "Tài liệu sắp hết hạn" }, "Tài liệu sẽ hết hiệu lực trong 7 ngày tới. (Ví dụ)"), /* @__PURE__ */ React.createElement(Alert, { tone: "danger", title: "Đăng nhập không thành công" }, "Tên đăng nhập hoặc mật khẩu chưa đúng. Vui lòng thử lại. (Ví dụ)"));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

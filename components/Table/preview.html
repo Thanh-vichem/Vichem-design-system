@@ -1,0 +1,37 @@
+<!-- @dsCard group="Bảng và số liệu" height=650 width=760 subtitle="Cột số căn phải, tabular-nums · zebra · dense" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Table</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .cap{font-size:var(--text-sm);color:var(--text-muted);margin:0 0 8px}
+  .block{margin-bottom:22px}
+  .block:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Table } = window.VichemDesignSystem_0c9bec;
+const columns = [
+  { key: "p", label: "Chỉ tiêu", strong: true },
+  { key: "v", label: "Giá trị", numeric: true },
+  { key: "u", label: "Đơn vị" },
+  { key: "m", label: "Phương pháp" }
+];
+const rows = [
+  { p: "Hàm lượng rắn", v: "98.0", u: "%", m: "ISO 3251" },
+  { p: "Tỉ trọng (25 °C)", v: "1.05", u: "g/cm³", m: "ISO 2811" },
+  { p: "pH (dung dịch 1 %)", v: "7.2", u: "—", m: "ISO 976" },
+  { p: "Liều dùng khuyến nghị", v: "0.2 – 0.5", u: "%", m: "Nội bộ" }
+];
+function Demo() {
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "block" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Mặc định: có sọc xen kẽ"), /* @__PURE__ */ React.createElement(Table, { caption: "Thông số kỹ thuật (số liệu ví dụ)", columns, rows })), /* @__PURE__ */ React.createElement("div", { className: "block" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Dense: đệm hẹp, không sọc"), /* @__PURE__ */ React.createElement(Table, { dense: true, zebra: false, caption: "Liều dùng (số liệu ví dụ)", columns: columns.slice(0, 2), rows: rows.map((r) => ({ p: r.p, v: r.v })) })));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

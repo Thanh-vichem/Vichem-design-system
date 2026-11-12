@@ -1,0 +1,25 @@
+<!-- @dsCard group="Thông báo và hộp thoại" height=160 width=420 subtitle="Vòng xoay 20 / 28px · ba chấm đang trả lời" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Spinner</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .row{display:flex;align-items:center;gap:16px;margin-bottom:14px;color:var(--color-primary)}
+  .cap{margin:0 0 4px;font-size:var(--text-sm);color:var(--text-muted)}
+  .txt{font-size:var(--text-sm);color:var(--text-body)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Spinner } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Vòng xoay"), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement(Spinner, { variant: "ring", size: 20, label: "Đang tải" }), /* @__PURE__ */ React.createElement(Spinner, { variant: "ring", size: 28, label: "Đang tải tài liệu" }), /* @__PURE__ */ React.createElement("span", { className: "txt" }, "Đang tải tài liệu…")), /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Ba chấm (đang trả lời)"), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement(Spinner, { variant: "dots" })));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

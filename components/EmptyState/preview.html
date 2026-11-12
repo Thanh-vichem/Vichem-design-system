@@ -1,0 +1,30 @@
+<!-- @dsCard group="Thông báo và hộp thoại" height=380 width=720 subtitle="Chưa có hội thoại · có hành động (ví dụ)" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>EmptyState</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .frame{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-lg)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { EmptyState, Button, Icon } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "frame" }, /* @__PURE__ */ React.createElement(
+    EmptyState,
+    {
+      title: "Chưa có hội thoại",
+      action: /* @__PURE__ */ React.createElement(Button, { leftIcon: /* @__PURE__ */ React.createElement(Icon, { name: "plus", size: 18 }) }, "Cuộc hội thoại mới")
+    },
+    "Hãy đặt câu hỏi đầu tiên về sản phẩm, thông số hoặc ứng dụng. (Ví dụ)"
+  ));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

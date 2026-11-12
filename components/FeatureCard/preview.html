@@ -1,0 +1,24 @@
+<!-- @dsCard group="Thẻ" height=270 width=740 subtitle="Thẻ giá trị có ô icon — 3 tone" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>FeatureCard</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Icon, Button, IconButton, Badge, Tag, Stat, Table, CertificateBadge, LogoWall, Alert, Input, Select, Textarea, Checkbox, Tabs, Breadcrumb, Pagination, Card, FeatureCard, Accordion, ProductCard } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 } }, /* @__PURE__ */ React.createElement(FeatureCard, { tone: "blue", icon: /* @__PURE__ */ React.createElement(Icon, { name: "shield-check", size: 20 }), title: "Chính hãng" }, "6 chứng nhận phân phối trực tiếp từ hãng."), /* @__PURE__ */ React.createElement(FeatureCard, { tone: "green", icon: /* @__PURE__ */ React.createElement(Icon, { name: "leaf", size: 20 }), title: "Hóa chất xanh" }, "Ưu tiên giải pháp thân thiện môi trường."), /* @__PURE__ */ React.createElement(FeatureCard, { tone: "neutral", icon: /* @__PURE__ */ React.createElement(Icon, { name: "flask-conical", size: 20 }), title: "Hỗ trợ kỹ thuật" }, "Tư vấn chọn sản phẩm theo hệ và điều kiện sản xuất."));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

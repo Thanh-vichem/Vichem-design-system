@@ -1,0 +1,35 @@
+<!-- @dsCard group="Nút & nhãn" height=560 width=760 subtitle="5 biến thể · 3 cỡ · icon trái/phải · disabled · fullWidth" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Button</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+  .lbl{width:96px;flex:none;font-family:var(--font-body);font-size:var(--text-sm);color:var(--text-muted)}
+  .cap{font-family:var(--font-body);font-size:var(--text-sm);color:var(--text-muted);margin:0 0 8px}
+  .sep{height:1px;background:var(--border-subtle);margin:16px 0}
+  .full{width:320px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Button, Icon } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  const variants = [
+    ["primary", "Yêu cầu báo giá"],
+    ["accent", "Tải TDS"],
+    ["secondary", "So sánh"],
+    ["ghost", "Xem thêm"],
+    ["dark", "Liên hệ"]
+  ];
+  return /* @__PURE__ */ React.createElement("div", null, variants.map(([v, text]) => /* @__PURE__ */ React.createElement("div", { className: "row", key: v }, /* @__PURE__ */ React.createElement("span", { className: "lbl" }, v), /* @__PURE__ */ React.createElement(Button, { variant: v, size: "sm" }, text), /* @__PURE__ */ React.createElement(Button, { variant: v, size: "md" }, text), /* @__PURE__ */ React.createElement(Button, { variant: v, size: "lg" }, text))), /* @__PURE__ */ React.createElement("div", { className: "sep" }), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("span", { className: "lbl" }, "Disabled"), /* @__PURE__ */ React.createElement(Button, { disabled: true }, "Đang khoá"), /* @__PURE__ */ React.createElement(Button, { variant: "accent", disabled: true }, "Đang khoá")), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("span", { className: "lbl" }, "Có icon"), /* @__PURE__ */ React.createElement(Button, { leftIcon: /* @__PURE__ */ React.createElement(Icon, { name: "file-text", size: 16 }) }, "Tải SDS"), /* @__PURE__ */ React.createElement(Button, { variant: "secondary", rightIcon: /* @__PURE__ */ React.createElement(Icon, { name: "arrow-right", size: 16 }) }, "Danh mục"), /* @__PURE__ */ React.createElement(Button, { variant: "accent", size: "lg", rightIcon: /* @__PURE__ */ React.createElement(Icon, { name: "arrow-right", size: 20 }) }, "Đăng ký")), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("span", { className: "lbl" }, "Toàn chiều rộng"), /* @__PURE__ */ React.createElement("div", { className: "full" }, /* @__PURE__ */ React.createElement(Button, { fullWidth: true, variant: "primary" }, "Gửi yêu cầu"))));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

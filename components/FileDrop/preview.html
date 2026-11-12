@@ -1,0 +1,32 @@
+<!-- @dsCard group="Ô nhập" height=480 width=720 subtitle="Vùng trống · có tiến độ và lỗi · thả file thử (ví dụ)" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>FileDrop</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cap{font-size:var(--text-sm);color:var(--text-muted);margin:0 0 8px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { FileDrop } = window.VichemDesignSystem_0c9bec;
+function toFiles(list) {
+  return Array.from(list).map((f) => ({ name: f.name, size: f.size }));
+}
+function Demo() {
+  const [empty, setEmpty] = React.useState([]);
+  const [filled, setFilled] = React.useState([
+    { name: "TDS Mã X.pdf", size: 12e5, progress: 40 },
+    { name: "Catalogue.pdf", size: 24e6, error: "File vượt quá 20 MB" }
+  ]);
+  return /* @__PURE__ */ React.createElement("div", { className: "grid" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Vùng rỗng (ví dụ)"), /* @__PURE__ */ React.createElement(FileDrop, { files: empty, onFiles: (l) => setEmpty((prev) => [...prev, ...toFiles(l)]) })), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Có file đang tải và file lỗi (ví dụ)"), /* @__PURE__ */ React.createElement(FileDrop, { multiple: true, files: filled, onFiles: (l) => setFilled((prev) => [...prev, ...toFiles(l)]) })));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- @dsCard group="Điều hướng" height=300 width=700 subtitle="3 tab · không kiểm soát và có kiểm soát · ←/→ Home End" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Tabs</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .cap{font-size:var(--text-sm);color:var(--text-muted);margin:0 0 8px}
+  .block{margin-bottom:22px}
+  .block:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Tabs } = window.VichemDesignSystem_0c9bec;
+const tabs = [
+  { id: "tds", label: "TDS", content: "Thông số kỹ thuật, chỉ tiêu chất lượng và phương pháp thử theo tài liệu hãng." },
+  { id: "sds", label: "SDS", content: "Thông tin an toàn hóa chất: phân loại nguy hại, bảo hộ, xử lý khi tràn đổ." },
+  { id: "app", label: "Ứng dụng", content: "Hệ sơn gốc nước, mực in, chất phủ công nghiệp. Liều dùng (ví dụ) 0.2 – 0.5 %." }
+];
+function Controlled() {
+  const [v, setV] = React.useState("app");
+  return /* @__PURE__ */ React.createElement(Tabs, { value: v, onChange: setV, tabs });
+}
+function Demo() {
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { className: "block" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Không kiểm soát (mở TDS sẵn)"), /* @__PURE__ */ React.createElement(Tabs, { defaultTab: "tds", tabs })), /* @__PURE__ */ React.createElement("div", { className: "block" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Có kiểm soát (đang chọn Ứng dụng)"), /* @__PURE__ */ React.createElement(Controlled, null)));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

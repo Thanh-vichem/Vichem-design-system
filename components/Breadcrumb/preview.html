@@ -1,0 +1,32 @@
+<!-- @dsCard group="Điều hướng" height=120 width=700 subtitle="Đường dẫn phân cấp danh mục sản phẩm" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Breadcrumb</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Breadcrumb } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement(
+    Breadcrumb,
+    {
+      items: [
+        { label: "Trang chủ", href: "#" },
+        { label: "Sản phẩm", href: "#" },
+        { label: "Sơn & Coatings", href: "#" },
+        { label: "Defoamer A-220" }
+      ]
+    }
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

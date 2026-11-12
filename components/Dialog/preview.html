@@ -1,0 +1,27 @@
+<!-- @dsCard group="Thông báo và hộp thoại" height=420 width=760 subtitle="Hộp thoại xác nhận xoá · bản tĩnh bên dưới (ví dụ)" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Dialog</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .stack{display:grid;gap:20px;max-width:520px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Dialog, Button, IconButton, Icon } = window.VichemDesignSystem_0c9bec;
+const DESC = "Tài liệu “TDS Mã X” sẽ bị gỡ khỏi chatbot. Không hoàn tác được.";
+function Demo() {
+  const [open, setOpen] = React.useState(false);
+  const close = () => setOpen(false);
+  const actions = /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(Button, { variant: "secondary", onClick: close }, "Huỷ"), /* @__PURE__ */ React.createElement(Button, { variant: "primary", onClick: close }, "Xoá"));
+  return /* @__PURE__ */ React.createElement("div", { className: "stack" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement(Button, { variant: "primary", onClick: () => setOpen(true) }, "Xoá tài liệu")), /* @__PURE__ */ React.createElement(Dialog, { open, tone: "danger", title: "Xoá tài liệu này?", onClose: close, actions }, DESC), /* @__PURE__ */ React.createElement("div", { className: "vds-dialog vds-dialog--danger" }, /* @__PURE__ */ React.createElement("div", { className: "vds-dialog__panel" }, /* @__PURE__ */ React.createElement("div", { className: "vds-dialog__header" }, /* @__PURE__ */ React.createElement("h2", { className: "vds-dialog__title" }, "Xoá tài liệu này?"), /* @__PURE__ */ React.createElement(IconButton, { variant: "ghost", size: "sm", label: "Đóng", icon: /* @__PURE__ */ React.createElement(Icon, { name: "x" }), className: "vds-dialog__close" })), /* @__PURE__ */ React.createElement("div", { className: "vds-dialog__body" }, DESC), /* @__PURE__ */ React.createElement("div", { className: "vds-dialog__actions" }, /* @__PURE__ */ React.createElement(Button, { variant: "secondary" }, "Huỷ"), /* @__PURE__ */ React.createElement(Button, { variant: "primary" }, "Xoá")))));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

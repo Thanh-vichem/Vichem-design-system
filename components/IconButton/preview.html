@@ -1,0 +1,28 @@
+<!-- @dsCard group="Nút & nhãn" height=380 width=560 subtitle="5 biến thể · 3 cỡ · luôn có label cho a11y" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>IconButton</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+  .lbl{width:96px;flex:none;font-family:var(--font-body);font-size:var(--text-sm);color:var(--text-muted)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { IconButton, Icon } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  const variants = ["primary", "accent", "secondary", "ghost", "dark"];
+  const labels = { primary: "Tìm kiếm", accent: "Tải xuống", secondary: "Thêm", ghost: "Đóng", dark: "Thêm mới" };
+  const icons = { primary: "search", accent: "download", secondary: "plus", ghost: "x", dark: "plus" };
+  return /* @__PURE__ */ React.createElement("div", null, variants.map((v) => /* @__PURE__ */ React.createElement("div", { className: "row", key: v }, /* @__PURE__ */ React.createElement("span", { className: "lbl" }, v), /* @__PURE__ */ React.createElement(IconButton, { label: labels[v], size: "sm", variant: v, icon: /* @__PURE__ */ React.createElement(Icon, { name: icons[v] }) }), /* @__PURE__ */ React.createElement(IconButton, { label: labels[v], size: "md", variant: v, icon: /* @__PURE__ */ React.createElement(Icon, { name: icons[v] }) }), /* @__PURE__ */ React.createElement(IconButton, { label: labels[v], size: "lg", variant: v, icon: /* @__PURE__ */ React.createElement(Icon, { name: icons[v] }) }))), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("span", { className: "lbl" }, "Disabled"), /* @__PURE__ */ React.createElement(IconButton, { label: "Tải xuống", variant: "accent", disabled: true, icon: /* @__PURE__ */ React.createElement(Icon, { name: "download" }) })));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

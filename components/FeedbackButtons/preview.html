@@ -1,0 +1,28 @@
+<!-- @dsCard group="Chat" height=260 width=420 subtitle="Chưa chọn · hữu ích · không hữu ích" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>FeedbackButtons</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-card);font-family:var(--font-body);color:var(--text-body)}
+  .row{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+  .cap{margin:0;font-size:var(--text-sm);color:var(--text-muted)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { FeedbackButtons } = window.VichemDesignSystem_0c9bec;
+function Stateful({ initial }) {
+  const [value, setValue] = React.useState(initial);
+  return /* @__PURE__ */ React.createElement(FeedbackButtons, { value, onChange: setValue });
+}
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Chưa chọn"), /* @__PURE__ */ React.createElement(Stateful, { initial: null })), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Hữu ích (bấm lại để bỏ chọn)"), /* @__PURE__ */ React.createElement(Stateful, { initial: "up" })), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Không hữu ích"), /* @__PURE__ */ React.createElement(Stateful, { initial: "down" })));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

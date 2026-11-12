@@ -1,0 +1,37 @@
+<!-- @dsCard group="Thẻ" height=220 width=700 subtitle="Dải logo đối tác — grayscale mặc định, đổi số cột" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>LogoWall</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Icon, Button, IconButton, Badge, Tag, Stat, Table, CertificateBadge, LogoWall, Alert, Input, Select, Textarea, Checkbox, Tabs, Breadcrumb, Pagination, Card, FeatureCard, Accordion, ProductCard } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement(
+    LogoWall,
+    {
+      columns: 4,
+      items: [
+        { name: "Covestro" },
+        { name: "TotalEnergies Corbion" },
+        { name: "Tinox" },
+        { name: "Buhler" },
+        { name: "IKA" },
+        { name: "Deco Chemicals" }
+      ]
+    }
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

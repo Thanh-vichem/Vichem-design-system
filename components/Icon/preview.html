@@ -1,0 +1,76 @@
+<!-- @dsCard group="Nút & nhãn" height=900 width=700 subtitle="47 icon Lucide nhúng sẵn · nét 1.75 · cỡ 22px" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Icon</title>
+<style>
+
+  body{margin:0;padding:var(--space-4);background:var(--surface-page);font-family:var(--font-body)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:var(--space-2)}
+  .cell{display:flex;flex-direction:column;align-items:center;gap:var(--space-2);padding:var(--space-3) var(--space-2);background:var(--surface-subtle);border:1px solid var(--border-subtle);border-radius:var(--radius-md)}
+  .cell svg{color:var(--color-primary)}
+  .name{font-size:var(--text-xs);color:var(--text-muted);text-align:center;word-break:break-all}
+  .note{margin-top:var(--space-3);font-size:var(--text-xs);color:var(--text-muted)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Icon } = window.VichemDesignSystem_0c9bec;
+const NAMES = [
+  "arrow-right",
+  "arrow-left",
+  "chevron-down",
+  "chevron-right",
+  "chevron-left",
+  "x",
+  "check",
+  "info",
+  "circle-alert",
+  "triangle-alert",
+  "circle-check",
+  "menu",
+  "send",
+  "thumbs-up",
+  "thumbs-down",
+  "file-text",
+  "file",
+  "upload",
+  "download",
+  "trash-2",
+  "search",
+  "plus",
+  "message-square",
+  "log-out",
+  "settings",
+  "chart-column",
+  "loader-circle",
+  "globe",
+  "external-link",
+  "user",
+  "users",
+  "copy",
+  "refresh-cw",
+  "mail",
+  "phone",
+  "map-pin",
+  "leaf",
+  "shield-check",
+  "warehouse",
+  "flask-conical",
+  "layout-grid",
+  "recycle",
+  "paint-roller",
+  "layers",
+  "shirt",
+  "gem",
+  "quote"
+];
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "grid" }, NAMES.map((n) => /* @__PURE__ */ React.createElement("div", { className: "cell", key: n }, /* @__PURE__ */ React.createElement(Icon, { name: n, size: 22 }), /* @__PURE__ */ React.createElement("span", { className: "name" }, n)))), /* @__PURE__ */ React.createElement("p", { className: "note" }, "Icon nét mảnh, màu theo chữ hiện tại. Tên hiển thị dưới mỗi icon là tên dùng trong thuộc tính name."));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

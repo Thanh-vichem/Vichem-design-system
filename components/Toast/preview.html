@@ -1,0 +1,26 @@
+<!-- @dsCard group="Thông báo và hộp thoại" height=360 width=760 subtitle="4 tone · hiện/ẩn có mờ dần (ví dụ)" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Toast</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px}
+  .col{display:grid;gap:8px;align-content:start;justify-items:start}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Toast, Button } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  const [on, setOn] = React.useState(false);
+  return /* @__PURE__ */ React.createElement("div", { className: "grid" }, /* @__PURE__ */ React.createElement("div", { className: "col" }, /* @__PURE__ */ React.createElement(Toast, { tone: "info", title: "Đang đồng bộ tài liệu" }, "Hệ thống đang cập nhật dữ liệu. (Ví dụ)"), /* @__PURE__ */ React.createElement(Toast, { tone: "success", title: "Đã lưu tài liệu" }, "Thay đổi đã được cập nhật. (Ví dụ)"), /* @__PURE__ */ React.createElement(Toast, { tone: "warning", title: "Tài liệu sắp hết hạn" }, "Hiệu lực còn 7 ngày. (Ví dụ)"), /* @__PURE__ */ React.createElement(Toast, { tone: "danger", title: "Tải lên không thành công", onClose: () => {
+  } }, "File vượt quá 20 MB. (Ví dụ)")), /* @__PURE__ */ React.createElement("div", { className: "col" }, /* @__PURE__ */ React.createElement(Button, { variant: "secondary", onClick: () => setOn((v) => !v) }, on ? "Ẩn thông báo" : "Hiện thông báo"), /* @__PURE__ */ React.createElement(Toast, { tone: "success", title: "Đã gửi phản hồi", open: on, onClose: () => setOn(false) }, "Cảm ơn bạn đã góp ý. (Ví dụ)")));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

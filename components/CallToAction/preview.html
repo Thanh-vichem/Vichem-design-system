@@ -1,0 +1,19 @@
+<!-- @dsCard group="Khối ấn phẩm" height=200 width=1000 subtitle="Solid / outline / link" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>CallToAction</title>
+<style>
+body{margin:0;padding:32px;background:var(--surface-page)}.lb{font:600 12px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--text-body);margin:0 0 12px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const NS = window.VichemDesignSystem_0c9bec;
+const { CallToAction } = NS;
+const L = ({ t }) => /* @__PURE__ */ React.createElement("p", { className: "lb" }, t);
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 24, alignItems: "center", flexWrap: "wrap" } }, /* @__PURE__ */ React.createElement(CallToAction, { label: "Liên hệ tư vấn" }), /* @__PURE__ */ React.createElement(CallToAction, { variant: "outline", label: "Tải datasheet" }), /* @__PURE__ */ React.createElement(CallToAction, { variant: "link", label: "Xem chi tiết tại", detail: "vichem.vn" }))));
+
+</script>
+</body>
+</html>

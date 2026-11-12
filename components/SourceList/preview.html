@@ -1,0 +1,24 @@
+<!-- @dsCard group="Chat" height=260 width=560 subtitle="Có liên kết · không liên kết · cảnh báo chưa xác minh" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>SourceList</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-card);font-family:var(--font-body);color:var(--text-body)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+  .cap{margin:0 0 8px;font-size:var(--text-sm);color:var(--text-muted)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { SourceList } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "grid" }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Có liên kết (mở tab mới)"), /* @__PURE__ */ React.createElement(SourceList, { sources: [{ title: "TDS Mã X", page: 2, href: "#" }, { title: "SDS Mã X", page: 1, href: "#" }] })), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", { className: "cap" }, "Không liên kết · chưa xác minh"), /* @__PURE__ */ React.createElement(SourceList, { sources: [{ title: "TDS Mã Y" }, { title: "Hướng dẫn thi công", page: 4 }], unverified: true })));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

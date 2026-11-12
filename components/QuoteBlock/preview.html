@@ -1,0 +1,19 @@
+<!-- @dsCard group="Khối ấn phẩm" height=340 width=1000 subtitle="Trích dẫn khách hàng / lãnh đạo" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>QuoteBlock</title>
+<style>
+body{margin:0;padding:32px;background:var(--surface-page)}.lb{font:600 12px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--text-body);margin:0 0 12px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const NS = window.VichemDesignSystem_0c9bec;
+const { QuoteBlock } = NS;
+const L = ({ t }) => /* @__PURE__ */ React.createElement("p", { className: "lb" }, t);
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(QuoteBlock, { style: { maxWidth: 720 }, quote: "Vichem đồng hành cùng chúng tôi từ khâu chọn nguyên liệu đến khi dây chuyền chạy ổn định.", name: "Họ và tên", role: "Chức danh, Công ty khách hàng" })));
+
+</script>
+</body>
+</html>

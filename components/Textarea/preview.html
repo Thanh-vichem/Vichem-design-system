@@ -1,0 +1,25 @@
+<!-- @dsCard group="Ô nhập" height=370 width=700 subtitle="Nhiều dòng · gợi ý · lỗi · disabled" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Textarea</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .stack{display:grid;gap:14px;max-width:340px}
+  .cap{font-size:var(--text-sm);color:var(--text-muted);margin:0 0 8px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Textarea } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "grid" }, /* @__PURE__ */ React.createElement(Textarea, { label: "Nhu cầu của bạn", rows: 4, placeholder: "Mã sản phẩm, khối lượng, nơi giao hàng…" }), /* @__PURE__ */ React.createElement(Textarea, { label: "Ghi chú", hint: "Tối đa 500 ký tự (ví dụ)", rows: 3 }), /* @__PURE__ */ React.createElement(Textarea, { label: "Mô tả ứng dụng", error: "Vui lòng nhập mô tả", rows: 3 }), /* @__PURE__ */ React.createElement(Textarea, { label: "Nội dung đã khoá", disabled: true, defaultValue: "Không sửa được", rows: 3 }));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- @dsCard group="Điều hướng" height=170 width=700 subtitle="Phân trang danh mục — window điều chỉnh số trang hiện" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Pagination</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .stack{display:grid;gap:16px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Pagination } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  const [page, setPage] = React.useState(5);
+  return /* @__PURE__ */ React.createElement("div", { className: "stack" }, /* @__PURE__ */ React.createElement(Pagination, { page: 1, total: 8, onChange: () => {
+  } }), /* @__PURE__ */ React.createElement(Pagination, { page, total: 12, onChange: setPage }), /* @__PURE__ */ React.createElement(Pagination, { page: 9, total: 9, window: 1, onChange: () => {
+  } }));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

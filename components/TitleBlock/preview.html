@@ -1,0 +1,19 @@
+<!-- @dsCard group="Khối ấn phẩm" height=420 width=1000 subtitle="Tiêu đề Bebas + đoạn dẫn; 3 thang share / slide / a4" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>TitleBlock</title>
+<style>
+body{margin:0;padding:32px;background:var(--surface-page)}.lb{font:600 12px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--text-body);margin:0 0 12px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const NS = window.VichemDesignSystem_0c9bec;
+const { TitleBlock } = NS;
+const L = ({ t }) => /* @__PURE__ */ React.createElement("p", { className: "lb" }, t);
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(L, { t: "size=share (ảnh chung 1448×1086)" }), /* @__PURE__ */ React.createElement(TitleBlock, { title: /* @__PURE__ */ React.createElement(React.Fragment, null, "Nhựa UV curing", /* @__PURE__ */ React.createElement("br", null), "cho mực in bao bì"), lead: "Khô nhanh, bám tốt trên màng nhựa, phù hợp dây chuyền in tốc độ cao.", maxWidth: 760 }), /* @__PURE__ */ React.createElement("div", { style: { height: 32 } }), /* @__PURE__ */ React.createElement(L, { t: "size=a4" }), /* @__PURE__ */ React.createElement(TitleBlock, { size: "a4", title: "Về chúng tôi", lead: "Thành lập năm 2017, Vichem là nhà phân phối chính thức của nhiều thương hiệu quốc tế.", maxWidth: 560 })));
+
+</script>
+</body>
+</html>

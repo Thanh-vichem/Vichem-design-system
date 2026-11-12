@@ -1,0 +1,19 @@
+<!-- @dsCard group="Khối ấn phẩm" height=240 width=1000 subtitle="Số liệu nổi bật" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>StatBlock</title>
+<style>
+body{margin:0;padding:32px;background:var(--surface-page)}.lb{font:600 12px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--text-body);margin:0 0 12px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const NS = window.VichemDesignSystem_0c9bec;
+const { StatBlock } = NS;
+const L = ({ t }) => /* @__PURE__ */ React.createElement("p", { className: "lb" }, t);
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(4,minmax(0,1fr))", gap: 32 } }, /* @__PURE__ */ React.createElement(StatBlock, { value: "2017", label: "Năm thành lập" }), /* @__PURE__ */ React.createElement(StatBlock, { value: "3", label: "Hệ thống kho: Bình Dương, Đà Nẵng, Hà Nội" }), /* @__PURE__ */ React.createElement(StatBlock, { value: "5", label: "Ngành hàng phục vụ" }), /* @__PURE__ */ React.createElement(StatBlock, { value: "100", unit: "%", label: "Hàng chính hãng, đủ COA, MSDS" })), /* @__PURE__ */ React.createElement("p", { style: { marginTop: 16, fontSize: 13, color: "var(--text-muted)" } }, "Số liệu mẫu — thay bằng số liệu đã xác nhận.")));
+
+</script>
+</body>
+</html>

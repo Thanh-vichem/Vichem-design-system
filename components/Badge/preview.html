@@ -1,0 +1,24 @@
+<!-- @dsCard group="Nút & nhãn" height=110 width=660 subtitle="4 tone — trạng thái hàng, nhãn chính hãng, cảnh báo" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Badge</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Badge } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement(Badge, { tone: "neutral" }, "Theo đơn"), /* @__PURE__ */ React.createElement(Badge, { tone: "blue" }, "Chính hãng"), /* @__PURE__ */ React.createElement(Badge, { tone: "success" }, "Còn hàng"), /* @__PURE__ */ React.createElement(Badge, { tone: "danger" }, "Ngừng kinh doanh")), /* @__PURE__ */ React.createElement("div", { className: "row" }));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

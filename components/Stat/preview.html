@@ -1,0 +1,23 @@
+<!-- @dsCard group="Bảng và số liệu" height=140 width=700 subtitle="Số liệu nổi bật — số liệu là ví dụ · 3 kiểu căn lề" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Stat</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Stat } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "grid" }, /* @__PURE__ */ React.createElement(Stat, { value: "16", label: "Nhà cung cấp (ví dụ)", sublabel: "chính hãng" }), /* @__PURE__ */ React.createElement(Stat, { value: "163", label: "Sản phẩm (ví dụ)", sublabel: "6 nhóm ứng dụng", align: "center" }), /* @__PURE__ */ React.createElement(Stat, { value: "6", label: "Chứng nhận (ví dụ)", sublabel: "accent được bỏ qua", accent: true, align: "right" }));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- @dsCard group="Khối ấn phẩm" height=300 width=1000 subtitle="Tiêu đề mục 2 dòng kiểu Profile, có số mục" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>HeadingLockup</title>
+<style>
+body{margin:0;padding:32px;background:var(--surface-page)}.lb{font:600 12px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--text-body);margin:0 0 12px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const NS = window.VichemDesignSystem_0c9bec;
+const { HeadingLockup } = NS;
+const L = ({ t }) => /* @__PURE__ */ React.createElement("p", { className: "lb" }, t);
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { style: { display: "flex", gap: 80 } }, /* @__PURE__ */ React.createElement(HeadingLockup, { line1: "Đối tác", line2: "Cung ứng" }), /* @__PURE__ */ React.createElement(HeadingLockup, { number: "05", line1: "Năng lực", line2: "Cung ứng" }))));
+
+</script>
+</body>
+</html>

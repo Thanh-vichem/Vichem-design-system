@@ -1,0 +1,28 @@
+<!-- @dsCard group="Nút & nhãn" height=130 width=620 subtitle="Chip lọc — chấm đầu · đang chọn · nút gỡ" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Tag</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Tag } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  const [active, setActive] = React.useState("Sơn & Coatings");
+  const [items, setItems] = React.useState(["TiO₂", "PVC"]);
+  const groups = ["Sơn & Coatings", "PVC & Nhựa", "Dệt nhuộm"];
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("div", { className: "row" }, groups.map((g) => /* @__PURE__ */ React.createElement(Tag, { key: g, dot: true, active: active === g, onClick: () => setActive(g) }, g))), /* @__PURE__ */ React.createElement("div", { className: "row" }, /* @__PURE__ */ React.createElement(Tag, null, "Chip thường"), /* @__PURE__ */ React.createElement(Tag, { active: true }, "Đang chọn"), items.map((it) => /* @__PURE__ */ React.createElement(Tag, { key: it, onRemove: () => setItems(items.filter((x) => x !== it)) }, it)), /* @__PURE__ */ React.createElement(Tag, { dot: true, active: true, onRemove: () => {
+  } }, "Covestro")));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

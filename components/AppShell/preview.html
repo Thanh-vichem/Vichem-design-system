@@ -1,0 +1,45 @@
+<!-- @dsCard group="Điều hướng" height=520 width=900 subtitle="Thanh bên · tiêu đề · vùng chính" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>AppShell</title>
+<style>
+
+  body{margin:0;padding:30px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .note{margin:0;font-size:var(--text-sm);color:var(--text-muted)}
+  .body{padding:var(--space-6)}
+  .body p{margin:0 0 var(--space-3);font-size:var(--text-base);line-height:var(--leading-relaxed);color:var(--text-body)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { AppShell, NavList } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement(
+    AppShell,
+    {
+      style: { height: 460, overflow: "hidden", border: "var(--border-width) solid var(--border-subtle)", borderRadius: "var(--radius-lg)" },
+      sidebar: /* @__PURE__ */ React.createElement(
+        NavList,
+        {
+          style: { padding: "var(--space-4) var(--space-3)" },
+          heading: "Hội thoại",
+          activeId: "tv",
+          items: [
+            { id: "tv", label: "Tư vấn chọn defoamer", icon: "message-square", meta: "2 giờ trước" },
+            { id: "bg", label: "Báo giá phụ gia gốc nước", icon: "file-text", meta: "Hôm qua" },
+            { id: "tk", label: "Thống kê đơn hàng tháng 10", icon: "chart-column", meta: "3 ngày" }
+          ]
+        }
+      ),
+      header: /* @__PURE__ */ React.createElement("span", { style: { fontWeight: "var(--weight-bold)", color: "var(--text-heading)" } }, "Tư vấn chọn defoamer")
+    },
+    /* @__PURE__ */ React.createElement("div", { className: "body" }, /* @__PURE__ */ React.createElement("p", null, "Vùng nội dung chính, cuộn độc lập khi dài hơn khung."), /* @__PURE__ */ React.createElement("p", { className: "note" }, "Dưới 900px thanh bên thu vào nút menu."))
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

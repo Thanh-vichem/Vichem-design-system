@@ -1,0 +1,39 @@
+<!-- @dsCard group="Thẻ" height=260 width=700 subtitle="Chứng nhận phân phối — có vùng cảnh báo ràng buộc lãnh thổ" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>CertificateBadge</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Icon, Button, IconButton, Badge, Tag, Stat, Table, CertificateBadge, LogoWall, Alert, Input, Select, Textarea, Checkbox, Tabs, Breadcrumb, Pagination, Card, FeatureCard, Accordion, ProductCard } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gap: 12 } }, /* @__PURE__ */ React.createElement(
+    CertificateBadge,
+    {
+      supplier: "Covestro",
+      scope: "Toàn bộ dòng Coatings tại Việt Nam (gồm di sản DSM RFM)",
+      since: "2021"
+    }
+  ), /* @__PURE__ */ React.createElement(
+    CertificateBadge,
+    {
+      supplier: "Buhler",
+      scope: "Optical Sorting & Rice Processing Solutions",
+      since: "2024",
+      territory: "Rice — chỉ Nam VN + ĐBSCL. Plastics — toàn quốc."
+    }
+  ));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

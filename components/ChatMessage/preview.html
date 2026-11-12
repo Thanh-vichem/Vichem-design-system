@@ -1,0 +1,46 @@
+<!-- @dsCard group="Chat" height=560 width=760 subtitle="Câu hỏi · trả lời có bảng, nguồn, đánh giá · đang trả lời" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>ChatMessage</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-card);font-family:var(--font-body);color:var(--text-body)}
+  .stack{display:flex;flex-direction:column;gap:var(--space-5);max-width:680px}
+  .note{margin:0;font-size:var(--text-sm);color:var(--text-muted)}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { ChatMessage, SourceList, FeedbackButtons, Table, Button } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  const [fb, setFb] = React.useState("up");
+  return /* @__PURE__ */ React.createElement("div", { className: "stack" }, /* @__PURE__ */ React.createElement(ChatMessage, { role: "user" }, "TiO₂ rutile cho sơn ngoại thất nên chọn loại nào?"), /* @__PURE__ */ React.createElement(
+    ChatMessage,
+    {
+      role: "assistant",
+      footer: /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(SourceList, { sources: [{ title: "TDS Mã X", page: 2, href: "#" }] }), /* @__PURE__ */ React.createElement(FeedbackButtons, { value: fb, onChange: setFb }))
+    },
+    /* @__PURE__ */ React.createElement("p", null, "Với sơn ngoại thất, nên chọn mã có hàm lượng TiO₂ cao và khả năng chống phấn hoá tốt (ví dụ so sánh):"),
+    /* @__PURE__ */ React.createElement(
+      Table,
+      {
+        columns: [
+          { key: "p", label: "Chỉ tiêu", strong: true },
+          { key: "x", label: "Mã X", numeric: true },
+          { key: "y", label: "Mã Y", numeric: true }
+        ],
+        rows: [
+          { p: "Hàm lượng TiO₂", x: "94%", y: "93%" },
+          { p: "Chống phấn hoá", x: "Cao", y: "Rất cao" }
+        ]
+      }
+    )
+  ), /* @__PURE__ */ React.createElement(ChatMessage, { role: "assistant", pending: true }), /* @__PURE__ */ React.createElement("p", { className: "note" }, "Nội dung minh hoạ, không phải thông số thật."));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- @dsCard group="Thẻ" height=300 width=740 subtitle="Thẻ sản phẩm — specs, note cảnh báo, nút yêu cầu báo giá" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>ProductCard</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body)}
+  .row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .row:last-child{margin-bottom:0}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Icon, Button, IconButton, Badge, Tag, Stat, Table, CertificateBadge, LogoWall, Alert, Input, Select, Textarea, Checkbox, Tabs, Breadcrumb, Pagination, Card, FeatureCard, Accordion, ProductCard } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 } }, /* @__PURE__ */ React.createElement(
+    ProductCard,
+    {
+      name: "Defoamer A-220",
+      supplier: "Covestro",
+      category: "Sơn & Coatings · Phụ gia",
+      specs: [
+        { label: "Liều dùng", value: "0.2 – 0.5 %" },
+        { label: "Hàm lượng rắn", value: "98 %" },
+        { label: "Quy cách", value: "20 kg / can" }
+      ],
+      onRequest: () => {
+      }
+    }
+  ), /* @__PURE__ */ React.createElement(
+    ProductCard,
+    {
+      name: "SORTEX A ColorVision",
+      supplier: "Buhler",
+      category: "Optical Sorting · Gạo",
+      specs: [
+        { label: "Công suất", value: "6 – 12 t/h" },
+        { label: "Kênh quang", value: "RGB + InGaAs" }
+      ],
+      note: "Chỉ phân phối tại Nam VN & ĐBSCL.",
+      onRequest: () => {
+      }
+    }
+  ));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

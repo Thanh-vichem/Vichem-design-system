@@ -1,0 +1,49 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Vichem Design System</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface-page); color: var(--text-body); font-family: var(--font-body); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; }
+  .band { position: absolute; top: 0; left: 0; width: 960px; height: 112px; }
+  .band svg { display: block; }
+  .brand { fill: var(--surface-brand); }
+  .deep { fill: var(--surface-brand-dark); }
+  .tint { fill: var(--surface-subtle); }
+  .accent { fill: var(--color-accent); }
+  .stripe { fill: var(--border-strong); }
+  .words { position: absolute; left: var(--space-6); bottom: var(--space-6); max-width: 896px; }
+  .name { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 64px; line-height: 0.95; color: var(--text-heading); }
+  .tag { margin: var(--space-2) 0 0; font-size: 14px; line-height: 20px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="band" aria-hidden="true">
+<svg viewBox="0 0 960 112" width="960" height="112">
+<!--
+  blocks      surface-brand 560 wide (the Vichem blue, largest) · surface-brand-dark 184 · surface-subtle 244 to the right edge (the tint) · color-accent 64×40 once (lime stays ≤ 10%) — band 960×112 ≈ 39% of the cover
+  arrangement a strip of unequal bands cut on one diagonal (60 across 112 down), as the thumbnail and carousel cut their blue blocks; space-4 gutters between cuts
+  pattern     four diagonal stripes, from "Ngăn cách bằng khoảng trắng, đường kẻ 1px": space-2-wide bars in border-strong on the tint, parallel to the cuts, at a space-6 pitch
+  scales      gutters space-4 (16); stripe width space-2 (8); pitch space-6 (32); accent block space-9 × space-7 (64×40); square cuts, no radius (blocks bleed off the top)
+-->
+<polygon class="brand" points="0,0 560,0 500,112 0,112"/>
+<polygon class="deep" points="576,0 760,0 700,112 516,112"/>
+<polygon class="tint" points="776,0 960,0 960,112 716,112"/>
+<polygon class="stripe" points="808,0 816,0 756,112 748,112"/>
+<polygon class="stripe" points="840,0 848,0 788,112 780,112"/>
+<polygon class="stripe" points="872,0 880,0 820,112 812,112"/>
+<polygon class="stripe" points="904,0 912,0 852,112 844,112"/>
+<polygon class="accent" points="917,72 960,72 960,112 896,112"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Vichem Design System</h1>
+<p class="tag">Logo, màu, chữ, thành phần giao diện và template ấn phẩm của Công ty Cổ phần Vichem.</p>
+</div>
+</div>
+</body>
+</html>

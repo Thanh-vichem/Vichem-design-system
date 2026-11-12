@@ -1,0 +1,43 @@
+<!-- @dsCard group="Điều hướng" height=420 width=360 subtitle="Tiêu đề nhóm · icon · thông tin phụ · đang chọn" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>NavList</title>
+<style>
+
+  body{margin:0;padding:16px;width:360px;box-sizing:border-box;background:var(--surface-subtle);font-family:var(--font-body);color:var(--text-body)}
+  .stack{display:grid;gap:18px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { NavList } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "stack" }, /* @__PURE__ */ React.createElement(
+    NavList,
+    {
+      heading: "Hội thoại",
+      activeId: "tv",
+      items: [
+        { id: "tv", label: "Tư vấn defoamer cho sơn gốc nước", meta: "2 giờ trước" },
+        { id: "dl", label: "Báo giá hệ phụ gia cho dây chuyền sản xuất sơn công nghiệp tại Bình Dương", meta: "Hôm qua" }
+      ]
+    }
+  ), /* @__PURE__ */ React.createElement(
+    NavList,
+    {
+      heading: "Quản trị",
+      items: [
+        { id: "hs", label: "Hồ sơ năng lực", icon: "file-text" },
+        { id: "tn", label: "Tin nhắn khách hàng", icon: "message-square" },
+        { id: "bc", label: "Báo cáo tháng 10", icon: "chart-column" }
+      ]
+    }
+  ));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

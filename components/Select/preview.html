@@ -1,0 +1,25 @@
+<!-- @dsCard group="Ô nhập" height=300 width=700 subtitle="Dropdown · gợi ý · lỗi · disabled" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Select</title>
+<style>
+
+  body{margin:0;padding:22px;background:var(--surface-page);font-family:var(--font-body);color:var(--text-body)}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .stack{display:grid;gap:14px;max-width:340px}
+  .cap{font-size:var(--text-sm);color:var(--text-muted);margin:0 0 8px}
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const { Select } = window.VichemDesignSystem_0c9bec;
+function Demo() {
+  return /* @__PURE__ */ React.createElement("div", { className: "grid" }, /* @__PURE__ */ React.createElement(Select, { label: "Nhóm ứng dụng", hint: "Chọn ngành sản xuất của bạn", defaultValue: "son" }, /* @__PURE__ */ React.createElement("option", { value: "son" }, "Sơn & Coatings"), /* @__PURE__ */ React.createElement("option", { value: "pvc" }, "PVC & Nhựa"), /* @__PURE__ */ React.createElement("option", { value: "det" }, "Dệt nhuộm"), /* @__PURE__ */ React.createElement("option", { value: "tp" }, "Thực phẩm")), /* @__PURE__ */ React.createElement(Select, { label: "Loại hình", error: "Vui lòng chọn loại hình" }, /* @__PURE__ */ React.createElement("option", { value: "" }, "— Chọn —"), /* @__PURE__ */ React.createElement("option", { value: "sx" }, "Công ty sản xuất"), /* @__PURE__ */ React.createElement("option", { value: "tm" }, "Công ty thương mại")), /* @__PURE__ */ React.createElement(Select, { label: "Khu vực", disabled: true }, /* @__PURE__ */ React.createElement("option", null, "Miền Bắc")));
+}
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(Demo, null));
+
+</script>
+</body>
+</html>

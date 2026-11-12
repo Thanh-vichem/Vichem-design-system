@@ -1,0 +1,19 @@
+<!-- @dsCard group="Khối ấn phẩm" height=560 width=1000 subtitle="Ảnh, ngành hàng, tên, mô tả, thông số chính" -->
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>ProductTile</title>
+<style>
+body{margin:0;padding:32px;background:var(--surface-page)}.lb{font:600 12px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--text-body);margin:0 0 12px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+const NS = window.VichemDesignSystem_0c9bec;
+const { ProductTile } = NS;
+const L = ({ t }) => /* @__PURE__ */ React.createElement("p", { className: "lb" }, t);
+ReactDOM.createRoot(document.getElementById("root")).render(/* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", { style: { display: "grid", gridTemplateColumns: "repeat(3,minmax(0,1fr))", gap: 20 } }, /* @__PURE__ */ React.createElement(ProductTile, { image: "/_blob/c554a1748edf49f2e021b6f4fba238ea", category: "Chất phủ & Mực in", name: "Nhựa UV curing", description: "Cho mực in bao bì màng nhựa.", specs: [["Hàm lượng rắn", "98 %"], ["Độ nhớt 25 °C", "1.500 mPa·s"]] }), /* @__PURE__ */ React.createElement(ProductTile, { image: "/_blob/a495880b15654121fdc2cea7ef2c2c35", category: "Nhựa", name: "Hạt nhựa PP", description: "Cho ngành bao bì, ép phun.", specs: [["MFI", "12 g/10 phút"], ["Tỷ trọng", "0,90 g/cm³"]] }), /* @__PURE__ */ React.createElement(ProductTile, { image: "/_blob/c1f59b0f15370d94848a8964a2a76c1b", category: "Keo", name: "Phụ gia keo dán", description: "Tăng độ bám, ổn định độ nhớt.", specs: [["Dạng", "Lỏng"], ["Đóng gói", "200 kg/phuy"]] }))));
+
+</script>
+</body>
+</html>
