@@ -1,0 +1,527 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-05T10:07:11.571Z"
+  },
+  "title": "Vichem Design System",
+  "namespace": "VichemDesignSystem_0c9bec",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "PartnerLogos",
+    "Images",
+    "Templates"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "m",
+      "order": [
+        "vichem-favicon.svg",
+        "vichem-logo-full-black.svg",
+        "vichem-logo-full-mono.svg",
+        "vichem-logo-full-white.svg",
+        "vichem-logo-full.svg",
+        "vichem-logo-mark-black.svg",
+        "vichem-logo-mark-mono.svg",
+        "vichem-logo-mark-white.svg",
+        "vichem-logo-mark.svg"
+      ],
+      "files": {
+        "vichem-favicon.svg": {
+          "name": "vichem-favicon.svg",
+          "blob": "087b849871e8ee699f844bbe93681607",
+          "size": 8274,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-full-black.svg": {
+          "name": "vichem-logo-full-black.svg",
+          "blob": "595c1985a10eb68f96816e82071c9fdd",
+          "size": 49026,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-full-mono.svg": {
+          "name": "vichem-logo-full-mono.svg",
+          "blob": "735e11584b6dad88bdcc888809d1a4e7",
+          "size": 49026,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-full-white.svg": {
+          "name": "vichem-logo-full-white.svg",
+          "blob": "e44d216098ed0aba14e768d95e6ed1cb",
+          "size": 49026,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-full.svg": {
+          "name": "vichem-logo-full.svg",
+          "blob": "e1b041047669b3b7d3430c8f86ddd7ae",
+          "size": 49026,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-mark-black.svg": {
+          "name": "vichem-logo-mark-black.svg",
+          "blob": "6e20d665db4e53eca4b6dec94f047760",
+          "size": 8272,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-mark-mono.svg": {
+          "name": "vichem-logo-mark-mono.svg",
+          "blob": "7b9a837729697759249a41615258a500",
+          "size": 8272,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-mark-white.svg": {
+          "name": "vichem-logo-mark-white.svg",
+          "blob": "63c63cbd16b760abc2b55d11ba29429b",
+          "size": 8272,
+          "type": "image/svg+xml"
+        },
+        "vichem-logo-mark.svg": {
+          "name": "vichem-logo-mark.svg",
+          "blob": "68735a7bc29bea3726b1a208ac61fe30",
+          "size": 8272,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "PartnerLogos": {
+      "name": "PartnerLogos",
+      "tile": "s",
+      "order": [
+        "partners/archroma.png",
+        "partners/boom.svg",
+        "partners/buhler.svg",
+        "partners/covestro.png",
+        "partners/eneos.svg",
+        "partners/ika.svg",
+        "partners/minglan.svg",
+        "partners/sinopec.svg",
+        "partners/tiansheng-ts.svg",
+        "partners/tinox.svg",
+        "partners/totalenergies-corbion.png",
+        "partners/whitearrow.svg",
+        "partners/xd-talc.svg",
+        "partners/xufeng.svg",
+        "partners/zealan.svg",
+        "customers/akzonobel.png",
+        "customers/europlas.png",
+        "customers/jotun.png",
+        "customers/kova.png",
+        "customers/nippon-paint.svg",
+        "customers/petrolimex.png",
+        "customers/polymer-asia.png",
+        "customers/ppg.svg",
+        "customers/sherwin-williams.png",
+        "customers/stavian-chemical.png",
+        "customers/tien-phong-plastic.png",
+        "customers/tri-nang.png"
+      ],
+      "files": {
+        "partners/archroma.png": {
+          "name": "partners/archroma.png",
+          "blob": "86531f42062ded224efa060b0ad038d0",
+          "size": 155781,
+          "type": "image/png"
+        },
+        "partners/boom.svg": {
+          "name": "partners/boom.svg",
+          "blob": "4a2d5d06a530b83f25af3dc05234c8b8",
+          "size": 144190,
+          "type": "image/svg+xml"
+        },
+        "partners/buhler.svg": {
+          "name": "partners/buhler.svg",
+          "blob": "fcaead88b7d16c6b7d917c793795e708",
+          "size": 9665,
+          "type": "image/svg+xml"
+        },
+        "partners/covestro.png": {
+          "name": "partners/covestro.png",
+          "blob": "8b8c8ee5e6b3eac541512b9e305663da",
+          "size": 166659,
+          "type": "image/png"
+        },
+        "partners/eneos.svg": {
+          "name": "partners/eneos.svg",
+          "blob": "08e82fe5b7f29f119d738c24088beb5d",
+          "size": 71620,
+          "type": "image/svg+xml"
+        },
+        "partners/ika.svg": {
+          "name": "partners/ika.svg",
+          "blob": "f82427887e3e847dabbe6f99b4d9061a",
+          "size": 24364,
+          "type": "image/svg+xml"
+        },
+        "partners/minglan.svg": {
+          "name": "partners/minglan.svg",
+          "blob": "8060a5b4984c714a04a58f3b8ca9bbc6",
+          "size": 332882,
+          "type": "image/svg+xml"
+        },
+        "partners/sinopec.svg": {
+          "name": "partners/sinopec.svg",
+          "blob": "e1cae4582bb47c330b0f53a1fa7290a9",
+          "size": 19834,
+          "type": "image/svg+xml"
+        },
+        "partners/tiansheng-ts.svg": {
+          "name": "partners/tiansheng-ts.svg",
+          "blob": "6752e9f6399edd46ca76c025d6badb79",
+          "size": 256857,
+          "type": "image/svg+xml"
+        },
+        "partners/tinox.svg": {
+          "name": "partners/tinox.svg",
+          "blob": "3655550895ab07860d9886714f7390ce",
+          "size": 73672,
+          "type": "image/svg+xml"
+        },
+        "partners/totalenergies-corbion.png": {
+          "name": "partners/totalenergies-corbion.png",
+          "blob": "586ae385fe62079f2aa1c8791e46f4cd",
+          "size": 96046,
+          "type": "image/png"
+        },
+        "partners/whitearrow.svg": {
+          "name": "partners/whitearrow.svg",
+          "blob": "1fb18c40289dbf088260b5c5d8a6ab57",
+          "size": 129856,
+          "type": "image/svg+xml"
+        },
+        "partners/xd-talc.svg": {
+          "name": "partners/xd-talc.svg",
+          "blob": "ff4ff485e2eadd411650e404c0c86554",
+          "size": 205383,
+          "type": "image/svg+xml"
+        },
+        "partners/xufeng.svg": {
+          "name": "partners/xufeng.svg",
+          "blob": "abe1476091bfce7fd927714e31a4463e",
+          "size": 94057,
+          "type": "image/svg+xml"
+        },
+        "partners/zealan.svg": {
+          "name": "partners/zealan.svg",
+          "blob": "1b3659c78e852534813a7a70483c2894",
+          "size": 63400,
+          "type": "image/svg+xml"
+        },
+        "customers/akzonobel.png": {
+          "name": "customers/akzonobel.png",
+          "blob": "279880b11d4d0deebdbb8ccd1ba89fa4",
+          "size": 154872,
+          "type": "image/png"
+        },
+        "customers/europlas.png": {
+          "name": "customers/europlas.png",
+          "blob": "13cda075fd98e7a7bad6cda91f8c4f9a",
+          "size": 79310,
+          "type": "image/png"
+        },
+        "customers/jotun.png": {
+          "name": "customers/jotun.png",
+          "blob": "7ef1a6cffd03bbc981f343d326afdf6d",
+          "size": 298075,
+          "type": "image/png"
+        },
+        "customers/kova.png": {
+          "name": "customers/kova.png",
+          "blob": "899d2ffc32df06e3f1a5fd1930d0fd9a",
+          "size": 369324,
+          "type": "image/png"
+        },
+        "customers/nippon-paint.svg": {
+          "name": "customers/nippon-paint.svg",
+          "blob": "cc5c46cfbaa4462de81d99e9813d0541",
+          "size": 17634,
+          "type": "image/svg+xml"
+        },
+        "customers/petrolimex.png": {
+          "name": "customers/petrolimex.png",
+          "blob": "afa42295882ed4ca56f4fd435e67b20e",
+          "size": 49404,
+          "type": "image/png"
+        },
+        "customers/polymer-asia.png": {
+          "name": "customers/polymer-asia.png",
+          "blob": "21d1cbd358373d3ab46154ad5c8bed06",
+          "size": 20220,
+          "type": "image/png"
+        },
+        "customers/ppg.svg": {
+          "name": "customers/ppg.svg",
+          "blob": "2b5fd28869ace54e70d532288e935e4e",
+          "size": 9643,
+          "type": "image/svg+xml"
+        },
+        "customers/sherwin-williams.png": {
+          "name": "customers/sherwin-williams.png",
+          "blob": "d16e97ed73391b1803ab79df04716ca0",
+          "size": 38350,
+          "type": "image/png"
+        },
+        "customers/stavian-chemical.png": {
+          "name": "customers/stavian-chemical.png",
+          "blob": "01ec3ddf1a74bc06d7fd5bda59a4101c",
+          "size": 555900,
+          "type": "image/png"
+        },
+        "customers/tien-phong-plastic.png": {
+          "name": "customers/tien-phong-plastic.png",
+          "blob": "64b9ab66feda80f9dbab144e40c66fd9",
+          "size": 32243,
+          "type": "image/png"
+        },
+        "customers/tri-nang.png": {
+          "name": "customers/tri-nang.png",
+          "blob": "c6f01ebf56239059fb6e3040be73336d",
+          "size": 722259,
+          "type": "image/png"
+        }
+      }
+    },
+    "Images": {
+      "name": "Images",
+      "tile": "l",
+      "order": [
+        "profile/commit-quality.jpg",
+        "profile/commit-sustainable.jpg",
+        "profile/commit-technical.jpg",
+        "profile/ind-adhesives.jpg",
+        "profile/ind-coatings.jpg",
+        "profile/ind-equipment.png",
+        "profile/ind-lubricants.jpg",
+        "profile/ind-plastics.jpg",
+        "profile/lab.jpg",
+        "profile/warehouse-1.jpg",
+        "profile/warehouse-2.jpg",
+        "profile/warehouse-binh-duong.jpg",
+        "profile/warehouse-da-nang.jpg",
+        "profile/warehouse-ha-noi.jpg",
+        "carousel/sample-cover.png",
+        "carousel/sample-dispersion.png",
+        "carousel/sample-fineness.png",
+        "carousel/sample-problem.png",
+        "carousel/sample-quick-pick.png",
+        "carousel/sample-save.png",
+        "samples/sample-film.png",
+        "samples/sample-lab.jpg",
+        "samples/sample-pellets.jpg"
+      ],
+      "files": {
+        "profile/commit-quality.jpg": {
+          "name": "profile/commit-quality.jpg",
+          "blob": "d6f725743c7124c80a3ae58f395cf6f1",
+          "size": 97685,
+          "type": "image/jpeg"
+        },
+        "profile/commit-sustainable.jpg": {
+          "name": "profile/commit-sustainable.jpg",
+          "blob": "0b7c76990152f321e610341e091dbaeb",
+          "size": 56637,
+          "type": "image/jpeg"
+        },
+        "profile/commit-technical.jpg": {
+          "name": "profile/commit-technical.jpg",
+          "blob": "4e2856fab05884fc8ddd0923cb62f0b3",
+          "size": 94431,
+          "type": "image/jpeg"
+        },
+        "profile/ind-adhesives.jpg": {
+          "name": "profile/ind-adhesives.jpg",
+          "blob": "017f4504442088514799658940178925",
+          "size": 197113,
+          "type": "image/jpeg"
+        },
+        "profile/ind-coatings.jpg": {
+          "name": "profile/ind-coatings.jpg",
+          "blob": "7c29a770d4aaaa18a471c507cb8bb975",
+          "size": 265948,
+          "type": "image/jpeg"
+        },
+        "profile/ind-equipment.png": {
+          "name": "profile/ind-equipment.png",
+          "blob": "a8d2aff2c315b8e969d559b689e27d44",
+          "size": 1909471,
+          "type": "image/png"
+        },
+        "profile/ind-lubricants.jpg": {
+          "name": "profile/ind-lubricants.jpg",
+          "blob": "9c3365d2f729eeb14f144cfd135ed01c",
+          "size": 261147,
+          "type": "image/jpeg"
+        },
+        "profile/ind-plastics.jpg": {
+          "name": "profile/ind-plastics.jpg",
+          "blob": "48fc53425a7d67dddd7b8b368246fdc0",
+          "size": 137559,
+          "type": "image/jpeg"
+        },
+        "profile/lab.jpg": {
+          "name": "profile/lab.jpg",
+          "blob": "6ccbf4c27328e39eb4c589a401a148af",
+          "size": 115325,
+          "type": "image/jpeg"
+        },
+        "profile/warehouse-1.jpg": {
+          "name": "profile/warehouse-1.jpg",
+          "blob": "4ed3e7a26a1f058fd0e3c025246c27d8",
+          "size": 86713,
+          "type": "image/jpeg"
+        },
+        "profile/warehouse-2.jpg": {
+          "name": "profile/warehouse-2.jpg",
+          "blob": "31d5f86ec44278976105ff09d243bb03",
+          "size": 44606,
+          "type": "image/jpeg"
+        },
+        "profile/warehouse-binh-duong.jpg": {
+          "name": "profile/warehouse-binh-duong.jpg",
+          "blob": "b003e8bc9e5c40ffd56d5de2c31237ff",
+          "size": 86713,
+          "type": "image/jpeg"
+        },
+        "profile/warehouse-da-nang.jpg": {
+          "name": "profile/warehouse-da-nang.jpg",
+          "blob": "0592b6c5533cc38a9281d722b2e94e71",
+          "size": 502742,
+          "type": "image/jpeg"
+        },
+        "profile/warehouse-ha-noi.jpg": {
+          "name": "profile/warehouse-ha-noi.jpg",
+          "blob": "9a75abc3f68251aa278d22a77178adfe",
+          "size": 441942,
+          "type": "image/jpeg"
+        },
+        "carousel/sample-cover.png": {
+          "name": "carousel/sample-cover.png",
+          "blob": "f8b62f145a40d8e5dcf3ce49db4ebed5",
+          "size": 44963,
+          "type": "image/png"
+        },
+        "carousel/sample-dispersion.png": {
+          "name": "carousel/sample-dispersion.png",
+          "blob": "82520b6ec55bf2c8bf30e60a0fdeb0be",
+          "size": 109426,
+          "type": "image/png"
+        },
+        "carousel/sample-fineness.png": {
+          "name": "carousel/sample-fineness.png",
+          "blob": "9aaa6c31ab5f5ed979c616998976592e",
+          "size": 29008,
+          "type": "image/png"
+        },
+        "carousel/sample-problem.png": {
+          "name": "carousel/sample-problem.png",
+          "blob": "dc47fd5ee5a3a7de90853219c45ba5a5",
+          "size": 139364,
+          "type": "image/png"
+        },
+        "carousel/sample-quick-pick.png": {
+          "name": "carousel/sample-quick-pick.png",
+          "blob": "f83e081bb41e9c24310b939f4334562c",
+          "size": 57629,
+          "type": "image/png"
+        },
+        "carousel/sample-save.png": {
+          "name": "carousel/sample-save.png",
+          "blob": "11778d968be7d40701536b3309fdceb7",
+          "size": 18115,
+          "type": "image/png"
+        },
+        "samples/sample-film.png": {
+          "name": "samples/sample-film.png",
+          "blob": "c554a1748edf49f2e021b6f4fba238ea",
+          "size": 1501407,
+          "type": "image/png"
+        },
+        "samples/sample-lab.jpg": {
+          "name": "samples/sample-lab.jpg",
+          "blob": "c1f59b0f15370d94848a8964a2a76c1b",
+          "size": 115325,
+          "type": "image/jpeg"
+        },
+        "samples/sample-pellets.jpg": {
+          "name": "samples/sample-pellets.jpg",
+          "blob": "a495880b15654121fdc2cea7ef2c2c35",
+          "size": 137559,
+          "type": "image/jpeg"
+        }
+      }
+    },
+    "Templates": {
+      "name": "Templates",
+      "tile": "l",
+      "order": [
+        "blog-zalo.png",
+        "carousel.png",
+        "profile-vi.png",
+        "profile-en.png",
+        "chatbot.png",
+        "website.png"
+      ],
+      "files": {
+        "blog-zalo.png": {
+          "name": "blog-zalo.png",
+          "blob": "8906996e5e1e50f8c4bad53e91b35abe",
+          "size": 1005508,
+          "type": "image/png"
+        },
+        "carousel.png": {
+          "name": "carousel.png",
+          "blob": "fcf18c51b78c9f95ad611c1c275833bc",
+          "size": 90107,
+          "type": "image/png"
+        },
+        "profile-vi.png": {
+          "name": "profile-vi.png",
+          "blob": "9d3e6e30b258a718f29b636dc839bf31",
+          "size": 76117,
+          "type": "image/png"
+        },
+        "profile-en.png": {
+          "name": "profile-en.png",
+          "blob": "3226ce38797a20d38f5265547ce801ff",
+          "size": 74267,
+          "type": "image/png"
+        },
+        "chatbot.png": {
+          "name": "chatbot.png",
+          "blob": "a1442818e1f5cac05413588aec8a8885",
+          "size": 76451,
+          "type": "image/png"
+        },
+        "website.png": {
+          "name": "website.png",
+          "blob": "85bf279e9c9a2bb9857d8f75c57426ba",
+          "size": 167746,
+          "type": "image/png"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Chinh Manh",
+    "at": "2026-11-06T01:53:21.000Z",
+    "via": "Claude Code · tools/build-artifact.mjs",
+    "note": "README viết riêng cho artifact theo mẫu"
+  }
+}
